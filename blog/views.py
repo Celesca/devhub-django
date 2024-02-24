@@ -9,6 +9,8 @@ def home(request):
     return render(request, 'blog/home.html', {'all_posts': all_posts})
 
 def post_detail(request, post_id):
+
+    single_post = Post.objects.get(pk=post_id)
     
     # Get single post
-    return render(request, )
+    return render(request, 'blog/post_detail.html' , {'single_post':single_post})
