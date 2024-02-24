@@ -9,7 +9,7 @@
     
     <ul>
         {% for post in all_posts %}
-        <li><a href="#">{{post.title}}</a></li>
+        <li><a href="posts/{{ post.id }}">{{post.title}}</a></li>
         {% endfor %}
     </ul>
         

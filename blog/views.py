@@ -14,3 +14,8 @@ def post_detail(request, post_id):
     
     # Get single post
     return render(request, 'blog/post_detail.html' , {'single_post':single_post})
+
+def cat_api(request):
+
+    # pip install requests
+    return render(request, 'blog/cat.html')
